@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Monedas</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/normalize.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.0/chart.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arsenal+SC:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <h1>Conversor de Pesos Chilenos</h1>
+    <hr>
+    <div class="card">
+        <div>
+            <h2>Pesos Chilenos (CLP)</h2>
+            <input id="input-clp" type="number" placeholder="Ingrese cantidad a convertir" required>
+        </div>
+        <div>
+            <p>Moneda a convertir:</p>
+            <div class="selector-desplegable">
+                <select class="custom-select" id="monedas-select">
+                </select>
+                <div class="selector-activador">Elige una moneda</div>
+                <div class="custom-options" id="custom-options">
+                </div>
+            </div>
+        </div>
+        <button id="convertir">Convertir</button>
+        <p id="resultado">...</p>
+    </div>
+
+
+    <div class="grafica">
+        <h3 id="grafico-titulo"></h3>
+        <canvas id="myChart" style="height: 400px; width: 1000px;"></canvas>
+    </div>
+
+
+
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>
